@@ -59,9 +59,9 @@ function ContactMain() {
     }
   return (
     <div>
-        <h3>Contact</h3>
-        <div className='line'></div>
-        <div className='portfolioGrid'>
+        <h1>Contact</h1>
+        <div className='contactLine'></div>
+        <div className='portfolioGrid' >
             <div>
                 <ul className='contactdetails'>
                     <li><a href='tel:+447414835835'><img src={callmelogo}/>&nbsp;&nbsp;07414 835 835</a></li>
@@ -71,15 +71,21 @@ function ContactMain() {
                 </ul>
             </div>
             
-            <div>
-                <span>Or Try Out This Form I Built...</span>
+            <div className='formContainer'>
                 <p className='formresponsestatus'>{formresponsestatus}</p>
                 <form  onSubmit={validateForm} className='contactForm'>
-                    <div className='form-name'><input type='text' onChange={(e)=>setFormName(e.target.value)} value={formName} placeholder='name'/> </div>
-                    <div className='form-email'><input type='text' onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} placeholder='email'/></div>
-                    <div className='form-phone'><input type='text' onChange={(e)=>setFormPhone(e.target.value)} value={formPhone} placeholder='phone'/></div>
-                    <div className='form-message'><textarea  onChange={(e)=>setFormMessage(e.target.value)} value={formMessage} placeholder='message'></textarea></div>
-                    <div className='form-submit'><input type='submit' value='submit'/></div>
+                    <input className='form-name' type='text' onChange={(e)=>setFormName(e.target.value)} value={formName} placeholder='name'/> 
+
+                    <input className='form-email'  type='text' onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} placeholder='email'/>
+
+                    <input className='form-phone' type='text' onChange={(e)=>setFormPhone(e.target.value)} value={formPhone} placeholder='phone'/>
+
+                    <textarea className='form-message'  onChange={(e)=>setFormMessage(e.target.value)} value={formMessage} placeholder='message'></textarea>
+
+                    <input className='form-submit' type='submit' value='submit'/>
+
+
+                
                 </form>
 
             </div>

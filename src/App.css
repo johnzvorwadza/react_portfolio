@@ -1,13 +1,20 @@
 :root{
-    --main-text-color: rgb(0, 0, 0);
-    --main-color: aquamarine;
+    --main-text-color: rgba(0,0,0,.8);
+    --main-color: #05b993;
 }
+html{
+    font: 112.5%/1.45em georgia,serif;
+    box-sizing: border-box;
+    
+}
+
 body{
     position: relative;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 .App {
- font-size: 1rem;
  max-width: 1400px;
  margin: auto;
 }
@@ -19,6 +26,7 @@ body{
 }
 .header{
     padding-top: 20px;
+    margin-bottom: 55px;
 }
 .footer{
     padding:30px 0;
@@ -32,10 +40,11 @@ img{
     width:100%;
 }
 .selectedpage{
-    border-bottom: 1px solid rgb(8, 80, 56);
+    border-bottom: 1px solid #05b993;
 }
 
 .line{width: 100%;height: 3px;background-color: var(--main-color);}
+.contactLine{width: 100%;height: 3px;background-color: var(--main-color);margin-bottom: 55px;}
 .header ul{margin:0;padding: 0;}
 .header ul li{display: inline;list-style-type: none;margin-right:10px;}
 .header ul li a{text-decoration: none; color: gray;}
@@ -56,15 +65,15 @@ img{
     justify-content: space-evenly;
 }
 .linksTab a , .contactdetails li a{
-    color: var(--main-text-color);
+    color: rgb(44 88 217 / 80%);
     font-weight: 500;
     text-decoration: none;
     display: flex;
     align-items: center;
 }
 .linksTab a img, .contactdetails li a img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .contactdetails{
@@ -72,11 +81,9 @@ img{
     margin: 0;
 }
 .contactdetails li{
-    margin-top: 10px;
+    margin-top: 20px;
     list-style-type: none;
     font-weight: 400;
-    font-size: 1.2rem;
-    color: rgb(24, 23, 23);
 }
 .contactdetails li a{
     font-weight: 400;
@@ -103,14 +110,12 @@ grid-template-areas:
 "name name name name"
 "phone phone email email"
 "message message message message"
-"submit submit nil nil";
-    gap: 20px;
+"submit submit submit submit";
+    gap: 10px;
 }
-.contactForm div input, .contactForm div textarea {
-    
-    width:100%;
+.contactForm input, .contactForm textarea {
+    font-size: 12pt;
     padding: 5px;
-    font-size: 1rem;
     background-color: rgb(22, 21, 21);
     color: aliceblue;
     max-width: 100%;
@@ -131,6 +136,8 @@ grid-template-areas:
 }
 .form-submit{
     grid-area: submit;
+    font-weight: bold;
+    border: 0px;
 
 }
 
@@ -138,11 +145,30 @@ grid-template-areas:
     color: rgb(13, 104, 1);
 }
 
+
+
+
+h1, h2 {
+    padding: 0;
+    margin: 0 0 1.45rem;
+    color: inherit;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    line-height: 1.1;
+}
+
+
+
 @media only screen and (max-width:800px) {
     .portfolioGrid{
         grid-template-columns:1fr;
     }
     .container{
-        padding:0px 0px;
+        padding:0px 16px;
+    }
+
+    .formContainer{
+        margin-top: 55px;
     }
 }
