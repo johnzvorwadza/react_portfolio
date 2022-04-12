@@ -1,0 +1,141 @@
+:root{
+    --main-text-color: rgb(0, 0, 0);
+    --main-color: aquamarine;
+}
+body{
+    position: relative;
+}
+
+.App {
+ font-size: 1rem;
+ max-width: 1400px;
+ margin: auto;
+}
+.container{
+    padding:0px 35px;
+}
+.header{
+    padding-top: 20px;
+}
+.footer{
+    padding:30px 0;
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+}
+.portfolioImg{
+    width:100%;
+}
+.selectedpage{
+    border-bottom: 1px solid aquamarine;
+}
+
+.line{width: 100%;height: 5px;background-color: var(--main-color);}
+.header ul{margin:0;padding: 0;}
+.header ul li{display: inline;list-style-type: none;margin-right:10px;}
+.header ul li a{text-decoration: none; color: gray;}
+.header ul li a:hover{color: rgb(77, 77, 77);}
+.header ul li .name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    
+}
+
+.linksTab{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.linksTab a , .contactdetails li a{
+    color: var(--main-text-color);
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.linksTab a img, .contactdetails li a img{
+    width: 30px;
+    height: 30px;
+}
+
+.contactdetails{
+    padding: 0;
+    margin: 0;
+}
+.contactdetails li{
+    margin-top: 10px;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgb(24, 23, 23);
+}
+.contactdetails li a{
+    font-weight: 400;
+    color: rgb(34, 34, 34) !important;
+}
+
+
+.portfolioGrid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 10px;
+}
+.portfolioGrid div{
+    background-color: rgba(6, 213, 250, 0.025);
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+
+
+.contactForm{
+display: grid;
+grid-template-areas: 
+"name name name name"
+"phone phone email email"
+"message message message message"
+"submit submit nil nil";
+    gap: 20px;
+}
+.contactForm div input, .contactForm div textarea {
+    width:100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(22, 21, 21);
+    color: aliceblue;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.form-name{
+    grid-area: name;
+
+}
+.form-email{
+    grid-area: email;
+}
+.form-phone{
+    grid-area: phone;
+}
+.form-message{
+    grid-area: message;
+}
+.form-submit{
+    grid-area: submit;
+
+}
+
+.formresponsestatus{
+    color: rgb(13, 104, 1);
+}
+
+@media only screen and (max-width:800px) {
+    .portfolioGrid{
+        grid-template-columns:1fr;
+    }
+    .container{
+        padding:0px 0px;
+    }
+}
