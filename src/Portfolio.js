@@ -4,7 +4,8 @@ import tictactoeimage from './img/tictactoe.jpeg'
 
 function Portfolio() {
   return (
-    <div className='portfolioGrid'>
+    <div className='portfolioGrid'> 
+      <h3>Portfolio</h3>
         
         <div>
             <img className='portfolioImg' src={tictactoeimage}/>

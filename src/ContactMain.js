@@ -63,7 +63,6 @@ function ContactMain() {
         <div className='line'></div>
         <div className='portfolioGrid'>
             <div>
-                <span>Get In Touch With Me Directly...</span>
                 <ul className='contactdetails'>
                     <li><a href='tel:+447414835835'><img src={callmelogo}/>&nbsp;&nbsp;07414 835 835</a></li>
                     <li><a href='mailto:johnzvorwadza@hotmail.com'><img src={emailmelogo}/>&nbsp;&nbsp;johnzvorwadza@hotmail.com</a></li>
