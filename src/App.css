@@ -15,11 +15,14 @@ body{
 }
 
 .App {
+    width: 100%;
  max-width: 1400px;
  margin: auto;
 }
 .container{
-    padding:0px 35px;
+    width: 100%;
+    padding:0 35px;
+    box-sizing: border-box;
 }
 .aboutContainer{
     padding:10px;
@@ -165,7 +168,9 @@ h1, h2 {
         grid-template-columns:1fr;
     }
     .container{
-        padding:0px 16px;
+        padding-left:16;
+        padding-right:16;
+       
     }
 
     .formContainer{
