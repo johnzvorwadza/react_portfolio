@@ -59,11 +59,11 @@ function ContactMain() {
     }
   return (
     <div>
-        <h1>Contact</h1>
+        <h3>Contact</h3>
         <div className='line'></div>
         <div className='portfolioGrid'>
             <div>
-                <h1>Get In Touch With Me Directly...</h1>
+                <span>Get In Touch With Me Directly...</span>
                 <ul className='contactdetails'>
                     <li><a href='tel:+447414835835'><img src={callmelogo}/>&nbsp;&nbsp;07414 835 835</a></li>
                     <li><a href='mailto:johnzvorwadza@hotmail.com'><img src={emailmelogo}/>&nbsp;&nbsp;johnzvorwadza@hotmail.com</a></li>
@@ -73,7 +73,7 @@ function ContactMain() {
             </div>
             
             <div>
-                <h1>Or Try Out This Form I Built...</h1>
+                <span>Or Try Out This Form I Built...</span>
                 <p className='formresponsestatus'>{formresponsestatus}</p>
                 <form  onSubmit={validateForm} className='contactForm'>
                     <div className='form-name'><input type='text' onChange={(e)=>setFormName(e.target.value)} value={formName} placeholder='name'/> </div>

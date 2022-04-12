@@ -1,8 +1,8 @@
 import React from 'react'
 
 function AboutMain() {
-    return (<div>
-        <h1>About Me</h1>
+    return (<div className='aboutContainer'>
+        <h3>About Me</h3>
         <div className='line'></div>
         <p>Hi I'm John a web developer from Staines, Surrey with a passion for all things coding.</p>
 

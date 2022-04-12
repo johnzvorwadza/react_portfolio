@@ -3,7 +3,7 @@ import Portfolio from './Portfolio'
 
 function Main() {
   return (<div>
-      <h1>Portfolio</h1>
+      <h3>Portfolio</h3>
       <Portfolio/>
       </div>)
 }
