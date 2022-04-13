@@ -10,6 +10,9 @@ function Links( { link } ) {
       {link.github && (<a target="_blank" href={link.github}><img src={githublogo}/>&nbsp;&nbsp;Github</a>)}
       {link.web && <a target="_blank" href={link.web}><img src={weblogo}/>&nbsp;&nbsp;View Site</a>}
       
+
+                
+
 </div>
   )
 }

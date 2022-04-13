@@ -72,15 +72,18 @@ function ContactMain() {
             </div>
             
             <div className='formContainer'>
-                <p className='formresponsestatus'>{formresponsestatus}</p>
-                <form  onSubmit={validateForm} className='contactForm'>
+            <p className='formresponsestatus'>{formresponsestatus}</p>
+            <form  onSubmit={validateForm} className='contactForm'>
                     <input className='form-name' type='text' onChange={(e)=>setFormName(e.target.value)} value={formName} placeholder='name'/> 
 
-                    <input className='form-email'  type='text' onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} placeholder='email'/>
+                    <div className='emailphone'>
+                        <input className='form-email'  type='text' onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} placeholder='email'/>
 
                     <input className='form-phone' type='text' onChange={(e)=>setFormPhone(e.target.value)} value={formPhone} placeholder='phone'/>
 
-                    <textarea className='form-message'  onChange={(e)=>setFormMessage(e.target.value)} value={formMessage} placeholder='message'></textarea>
+                     
+                    </div>
+                   <textarea className='form-message'  onChange={(e)=>setFormMessage(e.target.value)} value={formMessage} placeholder='message'></textarea>
 
                     <input className='form-submit' type='submit' value='submit'/>
 
@@ -88,6 +91,7 @@ function ContactMain() {
                 
                 </form>
 
+                
             </div>
         </div>
 

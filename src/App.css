@@ -98,10 +98,9 @@ img{
     display: grid;
     grid-template-columns:1fr 1fr;
     gap: 10px;
+    box-sizing: border-box;
 }
 .portfolioGrid div{
-    padding: 5px;
-    border-radius: 5px;
 
 }
 
@@ -110,10 +109,10 @@ img{
 .contactForm{
 display: grid;
 grid-template-areas: 
-"name name name name"
-"phone phone email email"
-"message message message message"
-"submit submit submit submit";
+"name name name name name"
+"emailphone  emailphone  emailphone emailphone emailphone"
+"message message  message message message"
+"n1 n1 n2 n2 submit";
     gap: 10px;
 }
 .contactForm input, .contactForm textarea {
@@ -122,17 +121,22 @@ grid-template-areas:
     background-color: rgb(22, 21, 21);
     color: aliceblue;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .form-name{
     grid-area: name;
 
 }
+.emailphone{
+    
+    grid-area: emailphone;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
 .form-email{
-    grid-area: email;
 }
 .form-phone{
-    grid-area: phone;
 }
 .form-message{
     grid-area: message;
@@ -141,6 +145,7 @@ grid-template-areas:
     grid-area: submit;
     font-weight: bold;
     border: 0px;
+    padding: 10px !important;
 
 }
 
@@ -174,6 +179,7 @@ h1, h2 {
     }
 
     .formContainer{
+        width: 100%;
         margin-top: 55px;
     }
 }
