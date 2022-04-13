@@ -73,6 +73,7 @@ function ContactMain() {
             
             <div className='formContainer'>
             <p className='formresponsestatus'>{formresponsestatus}</p>
+            <div >
             <form  onSubmit={validateForm} className='contactForm'>
                     <input className='form-name' type='text' onChange={(e)=>setFormName(e.target.value)} value={formName} placeholder='name'/> 
 
@@ -90,6 +91,7 @@ function ContactMain() {
 
                 
                 </form>
+                </div>
 
                 
             </div>
