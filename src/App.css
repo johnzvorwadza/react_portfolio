@@ -107,12 +107,13 @@ img{
 
 
 .contactForm{
+    
 display: grid;
 grid-template-areas: 
 "name name name name name"
 "emailphone  emailphone  emailphone emailphone emailphone"
 "message message  message message message"
-"n1 n1 n2 n2 submit";
+"submit submit submit submit submit";
     gap: 10px;
 }
 .contactForm input, .contactForm textarea {
@@ -173,8 +174,7 @@ h1, h2 {
         grid-template-columns:1fr;
     }
     .container{
-        padding-left:16;
-        padding-right:16;
+        padding:0 10px;
        
     }
 
