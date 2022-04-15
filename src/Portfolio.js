@@ -9,7 +9,7 @@ function Portfolio() {
         <div>
             <img className='portfolioImg' src={tictactoeimage}/>
             <div>
-                <h2>Tic-Tac-Toe - React.js</h2>
+                <h2 style={{marginTop:20}}>Tic-Tac-Toe - React.js</h2>
                 <span>A simple Tic Tac Toe game made with React, 
                     I used the Grid layout to design the game board. 
                     In the project I used useState function to store and share variables between components</span>
