@@ -109,15 +109,19 @@ img{
 .portfolioGrid div{
 
 }
+.portfolio{
+    margin-top: 16px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 5px;
+
+}
 
 
 div{max-width: 100%;}
 
 .contactForm{
-    
-display: grid;
-grid-template-columns: 1fr;
-gap: 5px;
+ 
 }
 .contactForm input, .contactForm textarea {
     font-size: 12pt;
@@ -127,14 +131,15 @@ gap: 5px;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 10px;
+    width: 100%;
+    margin-top: 10px;
 }
 .form-name{
 
 }
 .emailphone{
     
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 5px;
 }
 .form-email{
@@ -167,7 +172,10 @@ h1, h2 {
     line-height: 1.1;
 }
 
-
+.skillsimage{
+    width: 100px;
+    margin: 10px;
+}
 
 @media only screen and (max-width:800px) {
     .portfolioGrid{

@@ -1,4 +1,11 @@
 import React from 'react'
+import reactimage from './img/skillsImages/react.png'
+import cssimage from './img/skillsImages/css.png'
+import htmlimage from './img/skillsImages/html.png'
+import javascriptimage from './img/skillsImages/javascript.png'
+import phpimage from './img/skillsImages/php.png'
+import nodeimage from './img/skillsImages/node.png'
+import sqlimage from './img/skillsImages/sql.png'
 
 function AboutMain() {
     return (<div className='aboutContainer'>
@@ -17,7 +24,13 @@ function AboutMain() {
         <p>I'm also constantly trying to improve those technical skills not just by creating side projects but taking a serious academic approach to learning fundamental concepts like data structures and algorithms.</p>
 
         <p>I spend a fair amount of my free time working on side projects but my other interests include going to the gym and playing games.</p>
-
+        <img className='skillsimage' src={reactimage}/>
+        <img className='skillsimage' src={htmlimage}/>
+        <img className='skillsimage' src={cssimage}/>
+        <img className='skillsimage' src={javascriptimage}/>
+        <img className='skillsimage' src={phpimage}/>
+        <img className='skillsimage' src={nodeimage}/>
+        <img className='skillsimage' src={sqlimage}/>
 
 
         </div>)
