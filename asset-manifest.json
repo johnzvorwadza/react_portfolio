@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.23879e79.css",
-    "main.js": "/static/js/main.d6f913de.js",
+    "main.css": "/static/css/main.006b2529.css",
+    "main.js": "/static/js/main.3ff1d6fd.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/react.png": "/static/media/react.887f90e5aee8d7265f31.png",
+    "static/media/node.png": "/static/media/node.aa8bc616bb8252fa29f3.png",
+    "static/media/redditminimal.jpeg": "/static/media/redditminimal.8a4db7afde8f0c9e8961.jpeg",
+    "static/media/javascript.png": "/static/media/javascript.130c0ecd57833da6f75c.png",
     "static/media/github.png": "/static/media/github.4a47a5edac39eaa8aa80.png",
     "static/media/web.png": "/static/media/web.4d1e745068ecc835ea32.png",
+    "static/media/css.png": "/static/media/css.585ef422015a1c1da633.png",
     "static/media/linkedin.png": "/static/media/linkedin.6d58dbe88058f8dab0f9.png",
+    "static/media/html.png": "/static/media/html.7d984b24a3110df3c2d1.png",
+    "static/media/sql.png": "/static/media/sql.ee2b2d8279fb9225c0c3.png",
     "static/media/call.png": "/static/media/call.ada3214efdcdde3f88e1.png",
     "static/media/tictactoe.jpeg": "/static/media/tictactoe.2d5d97a02b5c41799229.jpeg",
     "static/media/email.png": "/static/media/email.a89f6295b53fc938a3cd.png",
     "index.html": "/index.html",
-    "main.23879e79.css.map": "/static/css/main.23879e79.css.map",
-    "main.d6f913de.js.map": "/static/js/main.d6f913de.js.map",
+    "main.006b2529.css.map": "/static/css/main.006b2529.css.map",
+    "main.3ff1d6fd.js.map": "/static/js/main.3ff1d6fd.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23879e79.css",
-    "static/js/main.d6f913de.js"
+    "static/css/main.006b2529.css",
+    "static/js/main.3ff1d6fd.js"
   ]
 }
