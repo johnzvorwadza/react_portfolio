@@ -1,12 +1,30 @@
 import React from 'react'
 import Links from './Links'
-import tictactoeimage from './img/tictactoe.jpeg'
+import shopgalaxyimage from './img/shopgalaxy.jpeg'
 import redditminimalimage from './img/redditminimal.jpeg'
 import shareimage from './img/share.jpeg'
 
 function Portfolio() {
   return (
     <div className='portfolioGrid'>
+
+
+<div className='portfolio'>
+            <img className='portfolioImg' src={shopgalaxyimage}/>
+            <div>
+                <h2 style={{marginTop:20}}>ShopGalaxy - Ecommerce Website</h2>
+                <span>An online store build  in node using React.js, Express.js and Postgresql. For this project I used Stripe Api for payments, I do plan on adding an option to allow customers to pay with Apple pay and Google pay as well.</span>
+                <Links link={
+                    {
+                        'github':'https://github.com/johnzvorwadza/tictactoe'
+                        ,'web':"https://johnzvorwadza.github.io/tictactoe/"
+                     }
+                }
+                />
+            </div>
+        </div>
+
+
 
 
 <div className='portfolio'>
@@ -51,22 +69,7 @@ function Portfolio() {
             </div>
         </div>
 
-         <div className='portfolio'>
-            <img className='portfolioImg' src={tictactoeimage}/>
-            <div>
-                <h2 style={{marginTop:20}}>Tic-Tac-Toe - React.js</h2>
-                <span>A simple Tic Tac Toe game made with React, 
-                    I used the Grid layout to design the game board. 
-                    In the project I used useState function to store and share variables between components</span>
-                <Links link={
-                    {
-                        'github':'https://github.com/johnzvorwadza/tictactoe'
-                        ,'web':"https://johnzvorwadza.github.io/tictactoe/"
-                     }
-                }
-                />
-            </div>
-        </div>
+        
 
         
     </div>
