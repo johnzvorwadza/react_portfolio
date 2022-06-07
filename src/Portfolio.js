@@ -16,8 +16,8 @@ function Portfolio() {
                 <span>An online store build  in node using React.js, Express.js and Postgresql. For this project I used Stripe Api for payments, I do plan on adding an option to allow customers to pay with Apple pay and Google pay as well.</span>
                 <Links link={
                     {
-                        'github':'https://github.com/johnzvorwadza/tictactoe'
-                        ,'web':"https://johnzvorwadza.github.io/tictactoe/"
+                        'github':null
+                        ,'web':"https://shopgalaxyfrontend.herokuapp.com/"
                      }
                 }
                 />
