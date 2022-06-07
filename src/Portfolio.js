@@ -24,32 +24,6 @@ function Portfolio() {
             </div>
         </div>
 
-
-
-
-<div className='portfolio'>
-            <img className='portfolioImg' src={shareimage}/>
-            <div>
-                <h2 style={{marginTop:20}}>Share - Express.js & Postgresql social media app </h2>
-                <span>Skills used
-                    <ul>
-                        <li>Javascript</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Postgresql</li>
-                    </ul></span>
-                <Links link={
-                    {
-                        'github':null
-                        ,'web':null
-                     }
-                }
-                />
-            </div>
-        </div>
-
-
-
         
         <div className='portfolio'>
             <img className='portfolioImg' src={redditminimalimage}/>
