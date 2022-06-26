@@ -2,7 +2,7 @@ import React from 'react'
 import Links from './Links'
 import shopgalaxyimage from './img/shopgalaxy.jpeg'
 import redditminimalimage from './img/redditminimal.jpeg'
-import shareimage from './img/share.jpeg'
+import gazetteerimage from './img/gazetteer.jpeg'
 
 function Portfolio() {
   return (
@@ -28,7 +28,7 @@ function Portfolio() {
 
 
         <div className='portfolio'>
-            <img className='portfolioImg' src={shopgalaxyimage}/>
+            <img className='portfolioImg' src={gazetteerimage}/>
             <div>
                 <h2 style={{marginTop:20}}>ShopGalaxy - Ecommerce Website</h2>
                 <span>An online store build  in node using React.js, Express.js and Postgresql. For this project I used Stripe Api for payments, I do plan on adding an option to allow customers to pay with Apple pay and Google pay as well.</span>
