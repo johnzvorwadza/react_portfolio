@@ -10,7 +10,7 @@ function Portfolio() {
 
 
 <div className='portfolio'>
-            <img className='portfolioImg' src={shopgalaxyimage}/>
+            <img className='portfolioImg' src={gazetteerimage}/>
             <div>
                 <h2 style={{marginTop:20}}>Gazzeetter</h2>
                 <span>Gazetteer is a Mobile friendly app I built as an IT Switch Carrer project.
@@ -28,7 +28,7 @@ function Portfolio() {
 
 
         <div className='portfolio'>
-            <img className='portfolioImg' src={gazetteerimage}/>
+            <img className='portfolioImg' src={shopgalaxyimage}/>
             <div>
                 <h2 style={{marginTop:20}}>ShopGalaxy - Ecommerce Website</h2>
                 <span>An online store build  in node using React.js, Express.js and Postgresql. For this project I used Stripe Api for payments, I do plan on adding an option to allow customers to pay with Apple pay and Google pay as well.</span>
