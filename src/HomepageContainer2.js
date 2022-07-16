@@ -2,15 +2,11 @@ import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
 import Main from './Main'
-import ContactMain from './ContactMain'
 
 function HomepageContainer() {
   return (<div className='container'>
       <Header currentpage=""/>
       <Main/>
-      <br/><br/>
-      
-    <ContactMain/>
       <Footer/>
         
     </div>)

@@ -67,7 +67,7 @@ img{
     margin-right: 10px;
     font-size: 1.2rem;
     font-weight: bolder;
-    color: var(--main-text-color);
+    color: white;
     
 }
 
@@ -102,7 +102,7 @@ img{
 }
 .contactdetails li a{
     font-weight: 400;
-    color: var(--main-text-color) !important;
+    color: lightgray !important;
 }
 
 
