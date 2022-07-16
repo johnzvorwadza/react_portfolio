@@ -3,6 +3,8 @@ import Links from './Links'
 import shopgalaxyimage from './img/shopgalaxy.jpeg'
 import redditminimalimage from './img/redditminimal.jpeg'
 import gazetteerimage from './img/gazetteer.jpeg'
+import companydirectoryimage from './img/companydirectory.jpeg'
+
 
 function Portfolio() {
   return (
@@ -25,6 +27,25 @@ function Portfolio() {
                 />
             </div>
         </div>
+
+
+        <div className='portfolio'>
+            <img className='portfolioImg' src={companydirectoryimage}/>
+            <div>
+                <h2 style={{marginTop:20}}>Company Directory</h2>
+                <span>A company directory of employees with CRUD functionality, the user can Create / Edit / Delete employees from the database. I used PHP for the server side. MYSQL for the database and HTML, CSS & JAVASCRIPT. I also used BootStrap to help me speed the design of the application.
+                    <h5>PHP, MYSQL, HTML, CSS, JAVASCRIPT</h5></span>
+                <Links link={
+                    {
+                        'github':null
+                        ,'web':"https://johnzvorwadza.uk/IT/company-directory/"
+                     }
+                }
+                />
+            </div>
+        </div>
+
+
 
 
         <div className='portfolio'>
