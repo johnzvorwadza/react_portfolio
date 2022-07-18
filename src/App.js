@@ -7,11 +7,7 @@ import ContactpageContainer from './ContactpageContainer';
 function App() {
   return (
     <div className="App">
-     <Routes>
-    <Route path="/" element={<HomepageContainer/>}/>
-    <Route path="/about" element={<AboutpageContainer/>}/>
-    <Route path="/contact" element={<ContactpageContainer/>}/>
-  </Routes>
+     <HomepageContainer/>
     </div>
   );
 }

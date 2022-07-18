@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
 import Main from './Main'
+import AboutMain from './AboutMain'
 import ContactMain from './ContactMain'
 
 function HomepageContainer() {
@@ -9,8 +10,9 @@ function HomepageContainer() {
       <Header currentpage=""/>
       <Main/>
       <br/><br/>
-      
-    <ContactMain/>
+      <AboutMain/>
+      <br/><br/>
+      <ContactMain/>
       <Footer/>
         
     </div>)

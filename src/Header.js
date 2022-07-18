@@ -16,9 +16,9 @@ function Header(props) {
   return (
     <div className='header'>
         <ul>
-            <li><NavLink className={`name ${page[0]}`} to='/'>John Zvorwadza</NavLink></li>
-            <li><NavLink className={page[1]}to='/about'>About</NavLink></li>
-            <li><NavLink className={page[2]}to='/contact'>Contact</NavLink></li>
+            <li><a className={`name ${page[0]}`} href='#portfolio'>John Zvorwadza</a></li>
+            <li><a className={page[1]}href='#about'>About</a></li>
+            <li><a className={page[2]}href='#contact'>Contact</a></li>
         </ul>
     </div>
   )

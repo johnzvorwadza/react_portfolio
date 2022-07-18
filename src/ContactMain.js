@@ -58,7 +58,7 @@ function ContactMain() {
 
     }
   return (
-    <div>
+    <div id="contact">
         <h1>Contact</h1>
         <div className='contactLine'></div>
         <div className='portfolioGrid' >

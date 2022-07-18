@@ -4,16 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { Route, HashRouter as Router, Routes} from 'react-router-dom';
+import { Route, Router as Router, Routes} from 'react-router-dom';
 import HomepageContainer from './HomepageContainer';
 import AboutpageContainer from './AboutpageContainer';
 import Header from './Header';
 
 
 ReactDOM.render(
-  <Router>
   <App/>
-  </Router>
 ,
   document.getElementById('root')
 );
