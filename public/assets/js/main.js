@@ -254,3 +254,9 @@
   });
 
 })()
+
+
+function submitForm(e){
+  alert();
+  e.preventDefault;
+}

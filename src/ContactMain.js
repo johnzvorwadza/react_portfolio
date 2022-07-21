@@ -11,6 +11,7 @@ function ContactMain() {
     const [formEmail, setFormEmail] = useState('');
     const [formPhone, setFormPhone] = useState('');
     const [formMessage, setFormMessage] = useState('');
+    const [formSubject, setFormSubject] = useState('');
     const [formresponsestatus, setFormResponseStatus] = useState('');
 
     async function submitMessage(headers){
@@ -20,19 +21,21 @@ function ContactMain() {
         let formData = new FormData();
         formData.append('name',formName);
 
-        let params = "name="+formName+"&message="+formMessage+"&email="+formEmail+"&phone="+formPhone+"&submit=true";
+    let params = "name="+formName+"&message="+formMessage+"&email="+formEmail+"&phone="+formPhone+"&subject="+formSubject+"&submit=true";
 
         var request = new XMLHttpRequest();
         request.open('POST','https://web.johnzvorwadza.uk/portfolio/contact.php',true)
         request.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
         request.onreadystatechange = function(){
             if(request.readyState == 4){
-                setFormResponseStatus("Your message have been sent, I will respond to you as soon as I can. Thank You");
+                setFormResponseStatus("Your message has been sent. Thank you!");
 
                 setFormName("");
                 setFormEmail("");
                 setFormPhone("");
                 setFormMessage("");
+                setFormSubject("");
+
             }
 
         };
@@ -58,46 +61,46 @@ function ContactMain() {
 
     }
   return (
-    <div id="contact">
-        <h1>Contact</h1>
-        <div className='contactLine'></div>
-        <div className='portfolioGrid' >
-            <div>
-                <ul className='contactdetails'>
-                    <li><a href='tel:+447414835835'><img src={callmelogo}/>&nbsp;&nbsp;07414 835 835</a></li>
-                    <li><a href='mailto:johnzvorwadza@hotmail.com'><img src={emailmelogo}/>&nbsp;&nbsp;johnzvorwadza@hotmail.com</a></li>
-                    <li><a target='blank' href='https://github.com/johnzvorwadza'><img src={githublogo}/>&nbsp;&nbsp;GitHub</a></li>
-                    <li><a target='blank' href='https://linkedin.com/in/john-zvorwadza-b00b73235'><img src={linkedinlogo}/>&nbsp;&nbsp;LinkedIn</a></li>
-                </ul>
-            </div>
-            
+         
             <div className='formContainer'>
-            <p className='formresponsestatus'>{formresponsestatus}</p>
             <div >
-            <form  onSubmit={validateForm} className='contactForm'>
-                    <input className='form-name' type='text' onChange={(e)=>setFormName(e.target.value)} value={formName} placeholder='name'/> 
-
-                    <div className='emailphone'>
-                        <input className='form-email'  type='text' onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} placeholder='email'/>
-
-                    <input className='form-phone' type='text' onChange={(e)=>setFormPhone(e.target.value)} value={formPhone} placeholder='phone'/>
-
-                     
-                    </div>
-                   <textarea className='form-message'  onChange={(e)=>setFormMessage(e.target.value)} value={formMessage} placeholder='message'></textarea>
-
-                    <input className='form-submit' type='submit' value='submit'/>
-
-
+            <form  onSubmit={validateForm} method="post" role="form" className="php-email-form">
+            <div className="row">
+                <div className="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input onChange={(e)=>setFormName(e.target.value)} value={formName} type="text" name="name" className="form-control" id="name" required/>
+                </div>
+                <div className="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} type="email" className="form-control" name="email" id="email" required/>
+                </div>
+                <div className="form-group col-md-6">
+                  <label for="name">Your Phone</label>
+                  <input onChange={(e)=>setFormPhone(e.target.value)} value={formPhone}  type="text" className="form-control" name="email" id="email" required/>
+                </div>
+              </div>
+              <div className="form-group">
+                <label for="name">Subject</label>
+                <input onChange={(e)=>setFormSubject(e.target.value)} value={formSubject} type="text" className="form-control" name="subject" id="subject" required/>
+              </div>
+              <div className="form-group">
+                <label for="name">Message</label>
+                <textarea onChange={(e)=>setFormMessage(e.target.value)} value={formMessage} className="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div className="my-3">
+                <div className="loading">Loading</div>
+                <div className="error-message"></div>
+                <div className="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+            <p className='formresponsestatus'>{formresponsestatus}</p>
+              <div className="text-center"><button type="submit">Send Message</button></div>
                 
                 </form>
                 </div>
 
                 
             </div>
-        </div>
 
-    </div>
   )
 }
 

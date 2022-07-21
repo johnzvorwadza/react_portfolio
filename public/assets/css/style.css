@@ -1094,6 +1094,11 @@ body {
     font-size: 13px;
     color: #eaebf0;
   }
+
+
+  .formresponsestatus{
+    color: rgb(13, 104, 1);
+}
   
   @media (max-width: 1199px) {
     #footer {

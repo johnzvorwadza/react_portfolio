@@ -53,6 +53,7 @@
     fetch(action, {
       method: 'POST',
       body: formData,
+      url: "https://web.johnzvorwadza.uk/portfolio/contact.php",
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
