@@ -1,13 +1,14 @@
 import { Route, BrowserRouter, Routes} from 'react-router-dom';
-import './App.css';
+import './App2.css';
 import HomepageContainer from './HomepageContainer';
 import AboutpageContainer from './AboutpageContainer';
 import ContactpageContainer from './ContactpageContainer';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
     <div className="App">
-     <HomepageContainer/>
+     <HomePage/>
     </div>
   );
 }
