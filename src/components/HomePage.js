@@ -42,6 +42,7 @@ function HomePage() {
                     ,'Dedicated Team Player'
                       ]}
                     typeSpeed={40}
+                    loop
                 /></p>
       
     </div>
@@ -100,33 +101,43 @@ function HomePage() {
 
           <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
             <div className="count-box">
-              <i className="bi bi-filetype-php"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" className="purecounter"></span>
-              <p><strong>PHP</strong></p>
+            <i className="bx bxl-php"></i>
             </div>
           </div>
 
           <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
             <div className="count-box">
               <i className="bi bi-filetype-js"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" className="purecounter"></span>
-              <p><strong>Javascript</strong></p>
             </div>
           </div>
 
           <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
             <div className="count-box">
               <i className="bi bi-filetype-css"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" className="purecounter"></span>
-              <p><strong>CSS</strong></p>
             </div>
           </div>
 
           <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
             <div className="count-box">
               <i className="bi bi-filetype-html"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" className="purecounter"></span>
-              <p><strong>HTML5</strong></p>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div className="count-box">
+              <i className="bi bi-filetype-sql"></i>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div className="count-box">
+            <i className="bx bxl-react"></i>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div className="count-box">
+            <i className="bx bxl-nodejs"></i>
             </div>
           </div>
 
