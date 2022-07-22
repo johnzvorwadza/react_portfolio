@@ -134,6 +134,9 @@ body {
     #header {
       left: -300px;
     }
+    #header[vis=true]{
+      left:0 !important;
+    }
   
     #main {
       margin-left: 0;
