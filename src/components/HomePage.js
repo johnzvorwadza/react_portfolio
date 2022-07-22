@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Typed from 'react-typed'
 import ContactMain from '../ContactMain';
 
 function HomePage() {
+  const [headerVisibilityMobile, setHeaderVisibilityMobile] = useState("false");
 
+  function mobileMenu(e){
+    if(headerVisibilityMobile === "true"){
+      setHeaderVisibilityMobile("false");
+    }else{
+      setHeaderVisibilityMobile("true");
+    }
+    
+  }
   
   return (
     <div>
-  <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <i onClick={mobileMenu} className="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <header id="header">
+  <header vis={headerVisibilityMobile} id="header">
     <div className="d-flex flex-column">
 
       <div className="profile">
