@@ -262,3 +262,7 @@ function submitForm(e){
   alert();
   e.preventDefault;
 }
+
+$("document").ready(()=>{
+  $("#loading").hide();
+});

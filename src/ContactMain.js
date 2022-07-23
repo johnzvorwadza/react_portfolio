@@ -74,14 +74,6 @@ function ContactMain() {
                   <label for="name">Your Email</label>
                   <input onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} type="email" className="form-control" name="email" id="email" required/>
                 </div>
-                <div className="form-group col-md-6">
-                  <label for="name">Your Phone</label>
-                  <input onChange={(e)=>setFormPhone(e.target.value)} value={formPhone}  type="text" className="form-control" name="email" id="email" required/>
-                </div>
-              </div>
-              <div className="form-group">
-                <label for="name">Subject</label>
-                <input onChange={(e)=>setFormSubject(e.target.value)} value={formSubject} type="text" className="form-control" name="subject" id="subject" required/>
               </div>
               <div className="form-group">
                 <label for="name">Message</label>
