@@ -6,7 +6,8 @@ function Experience() {
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
+          <h2>Curriculum Vitae
+</h2>
         </div>
 
         <div class="row">
@@ -55,7 +56,8 @@ function Experience() {
           </div>
         </div>
         <br/>
-        <p><a target="_blank" class="btn-primary" href='cv.pdf'>Download Resume</a></p>
+        <p><a target="_blank" class="btn-primary" href='cv.pdf'>Download Curriculum Vitae
+</a></p>
 
       </div>
     </section>
