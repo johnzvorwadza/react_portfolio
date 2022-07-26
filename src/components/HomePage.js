@@ -101,8 +101,7 @@ function HomePage() {
               </div>
               
             </div>
-          <p>I recently complited a coding traineeship with IT&nbsp;Career&nbsp;Switch 
-          on which I have helped improved my coding skills and learn new coding concepts.</p>
+          <p>I recently completed a coding traineeship with IT&nbs;Career&nbs;Switch which has helped me to improve my coding skills and learn new coding concepts</p>
           </div>
         </div>
 
