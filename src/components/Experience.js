@@ -56,7 +56,7 @@ function Experience() {
           </div>
         </div>
         <br/>
-        <p><a target="_blank" class="btn-primary" href='cv.pdf'>Download Curriculum Vitae
+        <p><a target="_blank" class="btn-primary" href='JohnZvorwadzaCV.pdf'>Download Curriculum Vitae
 </a></p>
 
       </div>
