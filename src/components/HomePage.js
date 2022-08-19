@@ -29,9 +29,7 @@ function HomePage() {
     
   }
 
-  function closeMobileMenu(e){
-    setHeaderVisibilityMobile("true"); 
-  }
+  
   
   return (
     <div>
@@ -52,12 +50,12 @@ function HomePage() {
 
       <nav id="navbar" className="nav-menu navbar">
         <ul>
-          <li><a onClick={closeMobileMenu} href="#hero" className="nav-link scrollto active"><i className="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a onClick={closeMobileMenu} href="#about" className="nav-link scrollto"><i className="bx bx-user"></i> <span>About</span></a></li>
-          <li><a onClick={closeMobileMenu} href="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a onClick={closeMobileMenu} href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Curriculum Vitae
+          <li><a onClick={mobileMenu} href="#hero" className="nav-link scrollto active"><i className="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a onClick={mobileMenu} href="#about" className="nav-link scrollto"><i className="bx bx-user"></i> <span>About</span></a></li>
+          <li><a onClick={mobileMenu} href="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a onClick={mobileMenu} href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Curriculum Vitae
 </span></a></li>
-          <li><a onClick={closeMobileMenu} href="#contact" className="nav-link scrollto"><i className="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a onClick={mobileMenu} href="#contact" className="nav-link scrollto"><i className="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav>
     </div>
